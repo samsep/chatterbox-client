@@ -14,11 +14,18 @@
   </head>
   <body>
     <div class="main">
-    <form method="post"><input type='text'/><button type='submit'>Send</button></form>
+      <form method="post">
+        <input type='text' class='sendMsg'/><button class='sendMsg'>Send</button>
+      </form>
+      <div id='roomSelect'>
+        <select>
+          <option value="test">Test</option>
+        </select>
+        <input type='text' class='room' /><button class='room'>Add Room</button>
+      </div>
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
          <ul id='chats'></ul>
     </div>
-    <div id='roomSelect'></div>
   </body>
 </html>
