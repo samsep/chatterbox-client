@@ -8,13 +8,17 @@
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
     <!-- your scripts -->
+    <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
   </head>
   <body>
-    <div id="main">
+    <div class="main">
+    <form method="post"><input type='text'/><button type='submit'>Send</button></form>
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+         <ul id='chats'></ul>
     </div>
+    <div id='roomSelect'></div>
   </body>
 </html>
