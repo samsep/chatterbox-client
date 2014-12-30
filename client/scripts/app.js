@@ -94,14 +94,15 @@ setInterval(function() {
 }, 1000);
 
 app.handleSubmit = function() {
-  var usename = window.location.search.split("=").pop();
-  var message = $('input').val();
-  var rmname = 'default';
-  $('form').on("click", "button", function() {
-    console.log('clicked');
-    app.send({username: usename, text: message, roomname: rmname})
-  });
 }
+  $('body').on("click", "button", function() {
+  var usename = window.location.search.split("=").pop();
+  var message = $('input').text();
+  var rmname = 'default';
+    event.preventDefault();
+    console.log('clicked');
+    app.send({username: usename, text: message, roomname: rmname});
+  });
 
 
 })
